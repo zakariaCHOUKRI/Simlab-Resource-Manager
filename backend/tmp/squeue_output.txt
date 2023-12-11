@@ -1,0 +1,14 @@
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+           5858668       gpu liganium bernardi  R   17:10:04      1 node13
+           5858572       gpu Delis.sl noureddi  R 1-16:13:03      1 node16
+           5857887     longq     Toth zakaria.  R 10-18:42:26      1 node15
+           5858432     longq jupyter- haitham.  R 2-19:50:42      1 node14
+           5858334     longq 2_str_10    safae  R 3-17:43:57      1 node14
+           5858693       gpu LV3e4Dee amine.an  R      59:33      1 node14
+           5858692       gpu 3e6DeepA amine.an  R    1:06:44      1 node06
+           5858675     longq  exec.sh slahbabi  R   15:11:40      1 node03
+           5858619       gpu 1e5DeepA amine.an  R 1-04:43:59      1 node07
+           5858618       gpu jupyter- hamsbaai  R 1-07:26:48      1 node10
+           5858617       gpu jupyter- hamsbaai  R 1-07:26:59      1 node12
+           5858569     longq  exec.sh slahbabi  R 1-17:14:49      1 node04
+           5858551       gpu 1e402Ada amine.an  R 1-21:04:21      1 node13

@@ -1,0 +1,324 @@
+NodeName=node01 Arch=x86_64 CoresPerSocket=20
+   CPUAlloc=0 CPUErr=0 CPUTot=40 CPULoad=0.01
+   AvailableFeatures=broadwell
+   ActiveFeatures=broadwell
+   Gres=(null)
+   NodeAddr=node01 NodeHostName=node01 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=128823 AllocMem=0 FreeMem=111112 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,shortq,longq,special 
+   BootTime=2023-08-28T18:47:17 SlurmdStartTime=2023-08-28T18:49:19
+   CfgTRES=cpu=40,mem=128823M,billing=40
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node02 Arch=x86_64 CoresPerSocket=20
+   CPUAlloc=0 CPUErr=0 CPUTot=40 CPULoad=0.03
+   AvailableFeatures=broadwell
+   ActiveFeatures=broadwell
+   Gres=(null)
+   NodeAddr=node02 NodeHostName=node02 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=128823 AllocMem=0 FreeMem=11260 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,shortq,longq,special 
+   BootTime=2023-08-25T12:50:07 SlurmdStartTime=2023-08-25T12:52:17
+   CfgTRES=cpu=40,mem=128823M,billing=40
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node03 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=30 CPUErr=0 CPUTot=44 CPULoad=1.01
+   AvailableFeatures=skylake
+   ActiveFeatures=skylake
+   Gres=(null)
+   NodeAddr=node03 NodeHostName=node03 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385483 AllocMem=262170 FreeMem=109640 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,shortq,longq,special 
+   BootTime=2023-09-08T13:17:54 SlurmdStartTime=2023-09-08T13:20:20
+   CfgTRES=cpu=44,mem=385483M,billing=44
+   AllocTRES=cpu=30,mem=262170M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node04 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=30 CPUErr=0 CPUTot=44 CPULoad=1.01
+   AvailableFeatures=skylake
+   ActiveFeatures=skylake
+   Gres=(null)
+   NodeAddr=node04 NodeHostName=node04 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385483 AllocMem=262170 FreeMem=84731 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,shortq,longq,special 
+   BootTime=2023-09-11T16:10:09 SlurmdStartTime=2023-09-11T16:12:36
+   CfgTRES=cpu=44,mem=385483M,billing=44
+   AllocTRES=cpu=30,mem=262170M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node05 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=0 CPUErr=0 CPUTot=44 CPULoad=7.84
+   AvailableFeatures=skylake
+   ActiveFeatures=skylake
+   Gres=(null)
+   NodeAddr=node05 NodeHostName=node05 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385483 AllocMem=0 FreeMem=143152 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,shortq,longq,special 
+   BootTime=2023-09-08T13:28:05 SlurmdStartTime=2023-09-08T13:30:33
+   CfgTRES=cpu=44,mem=385483M,billing=44
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node06 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=1 CPUErr=0 CPUTot=44 CPULoad=15.40
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node06 NodeHostName=node06 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385483 AllocMem=8757 FreeMem=362825 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-11-21T13:36:09 SlurmdStartTime=2023-11-21T13:39:31
+   CfgTRES=cpu=44,mem=385483M,billing=44
+   AllocTRES=cpu=1,mem=8757M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node07 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=1 CPUErr=0 CPUTot=44 CPULoad=11.92
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node07 NodeHostName=node07 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385483 AllocMem=8757 FreeMem=231957 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-10-31T14:51:42 SlurmdStartTime=2023-10-31T14:55:06
+   CfgTRES=cpu=44,mem=385483M,billing=44
+   AllocTRES=cpu=1,mem=8757M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node08 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=0 CPUErr=0 CPUTot=44 CPULoad=0.12
+   AvailableFeatures=skylake,V100
+   ActiveFeatures=skylake,V100
+   Gres=gpu:1
+   NodeAddr=node08 NodeHostName=node08 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385420 AllocMem=0 FreeMem=336392 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-11-20T14:21:00 SlurmdStartTime=2023-11-20T14:24:12
+   CfgTRES=cpu=44,mem=385420M,billing=44
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node09 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=0 CPUErr=0 CPUTot=44 CPULoad=0.04
+   AvailableFeatures=skylake,V100
+   ActiveFeatures=skylake,V100
+   Gres=gpu:1
+   NodeAddr=node09 NodeHostName=node09 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=0 FreeMem=324343 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-10-20T14:52:29 SlurmdStartTime=2023-10-20T14:55:47
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node10 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=44 CPUErr=0 CPUTot=44 CPULoad=0.01
+   AvailableFeatures=skylake,V100
+   ActiveFeatures=skylake,V100
+   Gres=gpu:1
+   NodeAddr=node10 NodeHostName=node10 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=385308 FreeMem=25600 Sockets=2 Boards=1
+   State=ALLOCATED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-08-25T12:08:07 SlurmdStartTime=2023-08-25T12:11:32
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=cpu=44,mem=385308M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node11 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=0 CPUErr=0 CPUTot=44 CPULoad=0.02
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node11 NodeHostName=node11 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=0 FreeMem=341102 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-10-02T12:24:37 SlurmdStartTime=2023-10-02T12:27:58
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node12 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=44 CPUErr=0 CPUTot=44 CPULoad=4.34
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node12 NodeHostName=node12 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=385308 FreeMem=283855 Sockets=2 Boards=1
+   State=ALLOCATED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-11-20T14:19:21 SlurmdStartTime=2023-11-20T14:23:05
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=cpu=44,mem=385308M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node13 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=41 CPUErr=0 CPUTot=44 CPULoad=4.52
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node13 NodeHostName=node13 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=49717 FreeMem=173674 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-08-25T12:08:06 SlurmdStartTime=2023-08-25T12:11:17
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=cpu=41,mem=49717M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node14 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=22 CPUErr=0 CPUTot=44 CPULoad=22.67
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node14 NodeHostName=node14 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=76377 FreeMem=117388 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,gpu,shortq,longq,special 
+   BootTime=2023-09-11T16:09:14 SlurmdStartTime=2023-09-11T16:12:22
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=cpu=22,mem=76377M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node15 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=44 CPUErr=0 CPUTot=44 CPULoad=13.98
+   AvailableFeatures=skylake,P40
+   ActiveFeatures=skylake,P40
+   Gres=gpu:1
+   NodeAddr=node15 NodeHostName=node15 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385422 AllocMem=141680 FreeMem=153089 Sockets=2 Boards=1
+   State=ALLOCATED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=defq,gpu,shortq,longq,special 
+   BootTime=2023-09-15T17:12:26 SlurmdStartTime=2023-09-15T17:17:36
+   CfgTRES=cpu=44,mem=385422M,billing=44
+   AllocTRES=cpu=44,mem=141680M
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node16 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=5 CPUErr=0 CPUTot=44 CPULoad=1.07
+   AvailableFeatures=skylake,V100
+   ActiveFeatures=skylake,V100
+   Gres=gpu:1
+   NodeAddr=node16 NodeHostName=node16 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=40960 FreeMem=265582 Sockets=2 Boards=1
+   State=MIXED ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-08-25T12:08:19 SlurmdStartTime=2023-08-25T12:11:32
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=cpu=5,mem=40G
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=node17 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=0 CPUErr=0 CPUTot=44 CPULoad=0.10
+   AvailableFeatures=skylake,V100
+   ActiveFeatures=skylake,V100
+   Gres=gpu:1
+   NodeAddr=node17 NodeHostName=node17 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385419 AllocMem=0 FreeMem=26535 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=gpu,special 
+   BootTime=2023-08-25T12:08:10 SlurmdStartTime=2023-08-25T12:11:50
+   CfgTRES=cpu=44,mem=385419M,billing=44
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+
+NodeName=visu01 Arch=x86_64 CoresPerSocket=22
+   CPUAlloc=0 CPUErr=0 CPUTot=44 CPULoad=0.02
+   AvailableFeatures=skylake
+   ActiveFeatures=skylake
+   Gres=gpu:1
+   NodeAddr=visu01 NodeHostName=visu01 Version=17.11
+   OS=Linux 3.10.0-862.el7.x86_64 #1 SMP Wed Mar 21 18:14:51 EDT 2018 
+   RealMemory=385483 AllocMem=0 FreeMem=213607 Sockets=2 Boards=1
+   State=IDLE ThreadsPerCore=1 TmpDisk=51175 Weight=1 Owner=N/A MCS_label=N/A
+   Partitions=visu 
+   BootTime=2023-02-03T11:09:40 SlurmdStartTime=2023-02-03T11:15:34
+   CfgTRES=cpu=44,mem=385483M,billing=44
+   AllocTRES=
+   CapWatts=n/a
+   CurrentWatts=0 LowestJoules=0 ConsumedJoules=0
+   ExtSensorsJoules=n/s ExtSensorsWatts=0 ExtSensorsTemp=n/s
+   
+

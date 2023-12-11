@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Define paths for temporary files
-sinfo_output_file="/tmp/sinfo_output.txt"
-squeue_output_file="/tmp/squeue_output.txt"
-scontrol_output_file="/tmp/scontrol_output.txt"
+sinfo_output_file="./tmp/sinfo_output.txt"
+squeue_output_file="./tmp/squeue_output.txt"
+scontrol_output_file="./tmp/scontrol_output.txt"
 
 # Fetch data using Slurm commands
 # sinfo for viewing information about Slurm nodes and partitions

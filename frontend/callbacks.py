@@ -10,7 +10,7 @@ def register_callbacks(app: Dash):
     )
     def update_partition_info(selected_partition):
         # Call the backend script and get data
-        result = subprocess.run(['python', '../backend/infos_parser.py'], stdout=subprocess.PIPE)
+        result = subprocess.run(['python3', '../backend/infos_parser.py'], stdout=subprocess.PIPE)
         data = json.loads(result.stdout.decode('utf-8'))
 
         # Update partition dropdown options

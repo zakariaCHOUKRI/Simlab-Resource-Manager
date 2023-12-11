@@ -47,13 +47,13 @@ def parse_scontrol_data(scontrol_output):
     return nodes
 
 def parse_slurm_data():
-    with open('/tmp/sinfo_output.txt', 'r') as file:
+    with open('../backend/tmp/sinfo_output.txt', 'r') as file:
         sinfo_data = parse_sinfo_data(file.read())
 
-    with open('/tmp/squeue_output.txt', 'r') as file:
+    with open('../backend/tmp/squeue_output.txt', 'r') as file:
         squeue_data = parse_squeue_data(file.read())
 
-    with open('/tmp/scontrol_output.txt', 'r') as file:
+    with open('../backend/tmp/scontrol_output.txt', 'r') as file:
         scontrol_data = parse_scontrol_data(file.read())
 
     return {
