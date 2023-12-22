@@ -26,7 +26,7 @@ Before running the application, ensure that you have the following:
 3. Clone this repository:
 
    ```
-   git clone https://github.com/Baidoune01/Simlab-Resource-Manager.git
+   git clone https://github.com/zakariaCHOUKRI/Simlab-Resource-Manager.git
    ```
 
 4. Change into the project directory:
