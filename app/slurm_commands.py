@@ -1,4 +1,3 @@
-# slurm_commands.py
 import subprocess
 
 def run_sinfo_command(format_string):
@@ -10,10 +9,5 @@ def run_squeue_command(partition=None):
     command = ['squeue']
     if partition:
         command.extend(['-p', partition])
-    result = subprocess.run(command, capture_output=True, text=True)
-    return result.stdout.strip()
-
-def run_scontrol_command(job_id):
-    command = ['scontrol', 'show', 'job', job_id]
     result = subprocess.run(command, capture_output=True, text=True)
     return result.stdout.strip()

@@ -1,8 +1,7 @@
-# web_interface.py
 import dash
 from dash import html, dcc, dash_table
 from dash.dependencies import Input, Output
-from app.slurm_commands import run_sinfo_command, run_squeue_command, run_scontrol_command
+from app.slurm_commands import run_sinfo_command, run_squeue_command
 from app.data_processing import process_partition_data
 
 # Get partition information when the app starts
@@ -10,6 +9,8 @@ partition_data = run_sinfo_command("%P|%C|%G")
 df_partitions = process_partition_data(partition_data)
 
 # Maximum allocation details for each partition
+# We got this information from the official
+# Simlab github documentation repository
 max_allocation_details = {
     'defq': {'MaxCpuTime': '1 hour', 'NodesAvailable': '7 (node[01-05], node14, node15)', 'MaxNodesPerJob': 1, 'MinMaxCoresPerJob': '1-44'},
     'shortq': {'MaxCpuTime': '4 hours', 'NodesAvailable': '7 (node[01-05], node14, node15)', 'MaxNodesPerJob': 2, 'MinMaxCoresPerJob': '1-88'},
@@ -31,7 +32,7 @@ app.layout = html.Div([
         id='partition-dropdown',
         options=options,
         value=initial_value,
-        style={'font-size': '16px'}  # Increase font size
+        style={'font-size': '16px'}
     ),
 
     # Display the resource information in a table
@@ -41,9 +42,9 @@ app.layout = html.Div([
             {"name": "Metric", "id": "Metric"},
             {"name": "Value", "id": "Value"},
         ],
-        style_table={'overflowX': 'auto', 'font-size': '20px'},  # Adjust font size for the table
-        style_header={'font-size': '22px', 'fontWeight': 'bold', 'padding': '10px'},  # Increase header font size and remove padding
-        style_cell={'padding': '10px'}  # Add cell padding
+        style_table={'overflowX': 'auto', 'font-size': '20px'},
+        style_header={'font-size': '22px', 'fontWeight': 'bold', 'padding': '10px'},
+        style_cell={'padding': '10px'}
     ),
 
     # Display the job information in a DataTable
@@ -52,9 +53,9 @@ app.layout = html.Div([
         columns=[
             {"name": col, "id": col} for col in ["JOBID", "PARTITION", "NAME", "USER", "ST", "NODES", "NODELIST(REASON)"]
         ],
-        style_table={'overflowX': 'auto', 'font-size': '16px'},  # Adjust font size
-        style_header={'font-size': '18px', 'fontWeight': 'bold', 'padding': '10px', 'header_repeated': False},  # Increase header font size and remove padding
-        style_cell={'padding': '0px'}  # Remove cell padding
+        style_table={'overflowX': 'auto', 'font-size': '16px'},
+        style_header={'font-size': '18px', 'fontWeight': 'bold', 'padding': '10px', 'header_repeated': False},
+        style_cell={'padding': '0px'}
     ),
 
     # Display maximum allocation details
