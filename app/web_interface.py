@@ -7,6 +7,7 @@ from app.data_processing import process_partition_data
 # Get partition information when the app starts
 partition_data = run_sinfo_command("%P|%C|%G")
 df_partitions = process_partition_data(partition_data)
+df_partitions = df_partitions.loc[df_partitions["AvailableGPUs"] != "(null)"]
 
 # Maximum allocation details for each partition
 # We got this information from the official
@@ -27,43 +28,81 @@ initial_value = options[0]['value']
 app = dash.Dash(__name__)
 
 app.layout = html.Div([
-    html.Label('Select Partition:'),
-    dcc.Dropdown(
-        id='partition-dropdown',
-        options=options,
-        value=initial_value,
-        style={'font-size': '16px'}
+
+    html.Div([
+        html.H1('Welcome To Simlab Resource Manager',
+        style={'font-family': 'Trebuchet MS', 'text-align': 'center'}),
+    ],
+    style={'margin-bottom': '40px', 'padding': '24px', 'background': '#f5f5f5'}
     ),
 
-    # Display the resource information in a table
-    dash_table.DataTable(
-        id='resource-table',
-        columns=[
-            {"name": "Metric", "id": "Metric"},
-            {"name": "Value", "id": "Value"},
+    html.Div([
+        html.Div([
+            html.Label('Select Partition:',
+            style={'font-size': '16px', 'font-family': 'Trebuchet MS'}
+            ),
+            dcc.Dropdown(
+                id='partition-dropdown',
+                options=options,
+                value=initial_value,
+                style={'font-size': '16px', 'width': '400px', 'margin-bottom': '20px', 'font-family': 'Trebuchet MS'}
+            ),
+        ]),
+        
+        html.Div([
+            
+            html.Div([
+                html.H3(
+                    'Information about this partition\'s CPUS',
+                    style={'font-family': 'Trebuchet MS'}
+                ),
+
+                html.Div([
+                    # Display the resource information in a table
+                    dash_table.DataTable(
+                        id='resource-table',
+                        columns=[
+                            {"name": "Metric", "id": "Metric"},
+                            {"name": "Value", "id": "Value"},
+                        ],
+                        style_table={'overflowX': 'auto', 'font-size': '20px', 'font-family': 'Trebuchet MS', 'margin-bottom': '20px', 'width': '400px'},
+                        style_header={'font-size': '22px', 'fontWeight': 'bold', 'padding': '10px', 'width': '200px', 'font-family': 'Trebuchet MS', 'text-align': 'center'},
+                        style_cell={'padding': '10px', 'width': '200px', 'font-family': 'Trebuchet MS', 'text-align': 'center'}
+                    ),
+                ]),
+            ]),
+            
+            html.Div([
+                html.H3(
+                    'Jobs running on this partition',
+                    style={'font-family': 'Trebuchet MS'}
+                ),
+                html.Div([
+                # Display the job information in a DataTable
+                dash_table.DataTable(
+                    id='table',
+                    columns=[
+                        {"name": col, "id": col} for col in ["JOBID", "PARTITION", "NAME", "USER", "ST", "NODES", "NODELIST(REASON)"]
+                    ],
+                    style_table={'overflowX': 'auto', 'font-size': '16px', 'font-family': 'Trebuchet MS', 'margin-bottom': '20px', 'width': '1400px'},
+                    style_header={'font-size': '18px', 'fontWeight': 'bold', 'padding': '10px', 'header_repeated': False, 'width': '200px', 'font-family': 'Trebuchet MS', 'width': '400px', 'text-align': 'center'},
+                    style_cell={'padding': '0px', 'font-family': 'Trebuchet MS', 'width': '200px', 'text-align': 'center'}
+                    ),
+                ]),
+            ]),
+            
         ],
-        style_table={'overflowX': 'auto', 'font-size': '20px'},
-        style_header={'font-size': '22px', 'fontWeight': 'bold', 'padding': '10px'},
-        style_cell={'padding': '10px'}
-    ),
+        style={'display': 'flex', 'justify-content': 'space-between'}
+        ),
 
-    # Display the job information in a DataTable
-    dash_table.DataTable(
-        id='table',
-        columns=[
-            {"name": col, "id": col} for col in ["JOBID", "PARTITION", "NAME", "USER", "ST", "NODES", "NODELIST(REASON)"]
-        ],
-        style_table={'overflowX': 'auto', 'font-size': '16px'},
-        style_header={'font-size': '18px', 'fontWeight': 'bold', 'padding': '10px', 'header_repeated': False},
-        style_cell={'padding': '0px'}
-    ),
+        # Display maximum allocation details
+        html.Div(
+            id='max-allocation-info',
+            style={'margin-top': '20px', 'font-size': '24px', 'font-family': 'Trebuchet MS'}
+        ),
+    ]),
 
-    # Display maximum allocation details
-    html.Div(
-        id='max-allocation-info',
-        style={'margin-top': '20px', 'font-size': '20px'}
-    ),
-])
+],)
 
 @app.callback(
     [Output('resource-table', 'data'),
